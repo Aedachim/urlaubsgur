@@ -62,18 +62,19 @@ section {
   background-color: #fff;
   max-width: 1400px;
   width: 100%;
+  margin: 0 auto;
 }
 
-.title-benefits {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1.6875rem;
-    margin: 3.5rem 0 1.5rem;
+.title-benefits h2 {
+  font-size: 2.25rem;
+  line-height: 2.5625rem;
+  font-weight: 400;
+  margin: 2rem 0;
 }
 
 .title-benefits span {
-    color: #00d5e0;
-    font-weight: 700;
+  color: #00d5e0;
+  font-weight: 700;
 }
 
 .benefits-travel {
@@ -92,38 +93,102 @@ section {
 }
 
 .usp-item #icon-percentage,
-.usp-item #icon-bulb, 
+.usp-item #icon-bulb,
 .usp-item #icon-lock,
 .usp-item #icon-camera {
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .usp-item h2 {
   font-size: 20px;
-    font-weight: 700;
-    color: #323231;
-    text-align: center;
+  font-weight: 700;
+  color: #323231;
+  text-align: center;
 }
 
 .usp-item p {
   color: #868686;
-    text-align: center;
-    margin-bottom: 0;
-    max-width: none;
+  text-align: center;
+  margin-bottom: 0;
+  max-width: none;
 }
 
-.title-community {
+/* second section */
+
+.title-community h2 {
   font-size: 2.25rem;
   font-weight: 400;
-  line-height: 1.6875rem;
-  margin: 3.5rem 0 1.5rem;
+  line-height: 2.5625rem;
+  margin: 2rem 0;
 }
 
 .title-community span {
-    color: #00d5e0;
-    font-weight: 700;
+  color: #00d5e0;
+  font-weight: 700;
+}
+
+.community-travel-places {
+  min-height: 350px;
+  margin-bottom: 2rem;
+}
+
+.community-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem 1.5rem;
+}
+
+
+.community-item {
+  overflow: hidden;
+  border-radius: 16px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  vertical-align: middle;
+}
+
+.luxushotels {
+  height: 378px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .5s;
+  max-width: 100%;
+}
+
+.textcontent {
+  position: relative;
+  margin-top: -60px;
+  left: calc(50% - 135px);
+  height: 96px;
+  width: 271px;
+  border-radius: 8px;
+  padding: 16px 10px;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .18);
+  text-align: center
+}
+
+.category-community {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.category-sub-title {
+  margin-right: 0.5rem;
 }
