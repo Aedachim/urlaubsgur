@@ -60,27 +60,29 @@ header #header-navigation button svg {
 
 section {
   background-color: #fff;
+  max-width: 1400px;
+  width: 100%;
 }
 
-.title {
+.title-benefits {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.6875rem;
     margin: 3.5rem 0 1.5rem;
 }
 
-.title span {
-  color: #00d5e0;
+.title-benefits span {
+    color: #00d5e0;
     font-weight: 700;
 }
 
-.benefits-urlaubsguru {
+.benefits-travel {
   padding: 0 1.5rem;
   display: flex;
 
 }
 
-.benefits-urlaubsguru-spacing {
+.benefits-travel-spacing {
   margin-bottom: 3.75rem;
 }
 
@@ -114,4 +116,14 @@ section {
     max-width: none;
 }
 
+.title-community {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  margin: 3.5rem 0 1.5rem;
+}
 
+.title-community span {
+    color: #00d5e0;
+    font-weight: 700;
+}
