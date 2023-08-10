@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  background-color: lightgray;
+  background-color: #fff;
 }
 
 header {
@@ -120,7 +120,7 @@ section {
 /* second section */
 
 #community {
-  height: 650px;
+  display: flex;
   padding: 0 1.5rem;
 }
 
@@ -173,7 +173,7 @@ img {
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .5s;
   max-width: 100%;
-  
+
 }
 
 .textcontent {
@@ -190,40 +190,54 @@ img {
 }
 
 .category-community {
-  font-size: 24px;
-  line-height: 1px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  font-size: 2rem;
+  /* line-height: 1px; */
   font-weight: 500;
   margin-bottom: 16px;
   position: relative;
+}
+
+.underline {
+  background-color: #0197af;
+  width: 3rem;
+  height: 1px;
 }
 
 .category-sub-title {
   margin: 0 8px 0 0;
   font-weight: 800;
   color: #0197af;
-  width: 251px;
-  height: 16px;
-  /* line-height: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 251px;
+  height: 16px; */
 }
 
 .category-sub-title svg {
-  width: 16px;
-  height: 16px;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 #button-wrap-community {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 48px;
+  height: 4rem;
   margin: 50px 0 0 0;
 }
 
 #button-wrap-community button {
-  width: 227px;
-  height: 48px;
+  /* width: 227px;
+  height: 48px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #00d5e0;
-  padding: 0 12px;
+  padding: 1.1rem 0.8rem;
   appearance: none;
   border: none;
   border-radius: 5px;
@@ -232,8 +246,8 @@ img {
 
 #button-wrap-community span {
   position: relative;
-  width: 203px;
-  height: 26px;
+  /* width: 203px;
+  height: 26px; */
     z-index: 10;
     white-space: nowrap;
     display: flex;
@@ -241,5 +255,5 @@ img {
     justify-content: center;
     color: #323231;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 0.9rem;
 }
