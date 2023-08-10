@@ -173,6 +173,7 @@ img {
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .5s;
   max-width: 100%;
+  
 }
 
 .textcontent {
