@@ -119,6 +119,11 @@ section {
 
 /* second section */
 
+#community {
+  height: 650px;
+  padding: 0 1.5rem;
+}
+
 .title-community h2 {
   font-size: 2.25rem;
   font-weight: 400;
@@ -144,11 +149,13 @@ section {
 
 
 .community-item {
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 16px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
+  height: 414px;
+    max-height: 414px;
 }
 
 img {
@@ -183,12 +190,55 @@ img {
 
 .category-community {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 1px;
   font-weight: 500;
   margin-bottom: 16px;
   position: relative;
 }
 
 .category-sub-title {
-  margin-right: 0.5rem;
+  margin: 0 8px 0 0;
+  font-weight: 800;
+  color: #0197af;
+  width: 251px;
+  height: 16px;
+  /* line-height: 20px; */
+}
+
+.category-sub-title svg {
+  width: 16px;
+  height: 16px;
+}
+
+#button-wrap-community {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  margin: 50px 0 0 0;
+}
+
+#button-wrap-community button {
+  width: 227px;
+  height: 48px;
+  background-color: #00d5e0;
+  padding: 0 12px;
+  appearance: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#button-wrap-community span {
+  position: relative;
+  width: 203px;
+  height: 26px;
+    z-index: 10;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #323231;
+    font-weight: bold;
+    font-size: 16px;
 }
