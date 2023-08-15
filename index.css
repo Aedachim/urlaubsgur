@@ -144,7 +144,7 @@ section {
 .community-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1.5rem 1.5rem;
+  grid-gap: 6rem 1.5rem;
 }
 
 
@@ -164,41 +164,42 @@ img {
   vertical-align: middle;
 }
 
-.luxushotels {
-  height: 378px;
+.community-item > img {
+  aspect-ratio: 1/1;
   width: 100%;
   object-fit: cover;
   border-radius: 16px;
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-  transition-duration: .5s;
   max-width: 100%;
 
 }
 
 .textcontent {
-  position: relative;
-  margin-top: -60px;
-  left: calc(50% - 135px);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%)translateY(50%);
   width: 271px;
   border-radius: 8px;
   padding: 16px 10px;
   background-color: #fff;
   box-shadow: 0 0 12px rgba(0, 0, 0, .18);
-  text-align: center
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .category-community {
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 16px;
+  margin: 0;
   position: relative;
 }
 
 .underline {
   background-color: #0197af;
-  width: 10rem;
-  height: 1px;
+  width: 6rem;
+  height: 3px;
   margin: 0 auto;
 }
 
@@ -209,6 +210,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .category-sub-title svg {
@@ -221,7 +223,7 @@ img {
   justify-content: center;
   align-items: center;
   height: 4rem;
-  margin: 50px 0 0 0;
+  margin: 7rem 0 0 0;
 }
 
 #button-wrap-community button {
@@ -248,8 +250,22 @@ img {
   font-size: 0.9rem;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 320px) {
+  nav li {
+    display: none;
+  }
 
+  .icon-hidden {
+    display: none;
+  }
+
+  .title-community h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -260,11 +276,9 @@ img {
   }
 
   .community-wrapper {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    flex-wrap: wrap;
-    gap: 1.5rem 1.5rem;
+    grid-template-columns: 1fr;
   }
+
+
  
 }
