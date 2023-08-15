@@ -155,7 +155,7 @@ section {
   -moz-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
   height: 414px;
-    max-height: 414px;
+  max-height: 414px;
 }
 
 img {
@@ -238,12 +238,33 @@ img {
 
 #button-wrap-community span {
   position: relative;
-    z-index: 10;
-    white-space: nowrap;
+  z-index: 10;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #323231;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .title-community h2 {
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: #323231;
-    font-weight: bold;
-    font-size: 0.9rem;
+  }
+
+  .community-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem 1.5rem;
+  }
+ 
 }
