@@ -180,7 +180,6 @@ img {
   position: relative;
   margin-top: -60px;
   left: calc(50% - 135px);
-  height: 96px;
   width: 271px;
   border-radius: 8px;
   padding: 16px 10px;
@@ -190,11 +189,7 @@ img {
 }
 
 .category-community {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   font-size: 2rem;
-  /* line-height: 1px; */
   font-weight: 500;
   margin-bottom: 16px;
   position: relative;
@@ -202,8 +197,9 @@ img {
 
 .underline {
   background-color: #0197af;
-  width: 3rem;
+  width: 10rem;
   height: 1px;
+  margin: 0 auto;
 }
 
 .category-sub-title {
@@ -213,8 +209,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 251px;
-  height: 16px; */
 }
 
 .category-sub-title svg {
@@ -231,8 +225,6 @@ img {
 }
 
 #button-wrap-community button {
-  /* width: 227px;
-  height: 48px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,8 +238,6 @@ img {
 
 #button-wrap-community span {
   position: relative;
-  /* width: 203px;
-  height: 26px; */
     z-index: 10;
     white-space: nowrap;
     display: flex;
