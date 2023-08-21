@@ -252,7 +252,6 @@ img {
 }
 
 footer {
-  display: flex;
   background-color: #aef9fc;
   max-width: 1400px;
   width: 100%;
@@ -262,13 +261,19 @@ footer {
   border-bottom: 0.5px solid #aef9fc;
 }
 
-.footer-content button {
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%)translateY(50%);
-
+footer button {
+ display: flex;
+ justify-content: center;
 }
 
+.footer-nav #footer-logo {
+   width: 20%;
+  height: auto; 
+}
+
+svg > #footer-logo {
+  /* aspect-ratio: 1/1; */
+}
 
 
 /* 
