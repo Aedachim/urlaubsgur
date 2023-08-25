@@ -280,24 +280,24 @@ footer {
 
 .footer-nav {
   display: flex;
+  flex-direction: row;  
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.25rem;
 }
 
 .footer-nav #footer-logo {
-  width: 12rem;
+  display: inline-flex;     
+  width: 12rem;  
   height: auto;
-  /* border: none;
-  appearance: none;
-  background-color: transparent; */
 }
 
 .footer-icon-part {
+  display: inline-flex; 
+  gap: 2rem; 
   border: none;
   background-color: transparent;
-  /* padding-left: 2rem; */
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
   cursor: pointer;
 }
 
@@ -308,7 +308,43 @@ footer {
   margin: 0 auto;
 }
 
+.footer-center-wrap {
+  display: grid;
+  grid-template-areas: "center-left center-right";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  padding: 2rem 0 0 0;
 
+}
+
+.footer-lists-browser {
+  display: grid;
+  grid-template-areas: "coporate-panel information-panel inspiration-panel";
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem 2rem;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+}
+
+h4 .column-headline {
+  color: #323231;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 1.2rem 0;
+}
+
+.panel coporate-panel ul span {
+  color: #323231;
+  font-size: 1rem;
+  padding-bottom: 0.75rem;
+}
+
+.panel coporate-panel ul li a {
+  text-decoration: none;
+}
 
 .footer-list li { 
   list-style: none;
