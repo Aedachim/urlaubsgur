@@ -347,9 +347,15 @@ h4.column-headline {
   align-items: flex-start;
 } */
 
-.footer-list li { 
+ul.footer-list {
+  padding: 0;
+}
+
+ul.footer-list li {
+  padding-bottom: 1.2rem;
   list-style: none;
 }
+
 
 .footer-list a {
   text-decoration: none;
@@ -359,6 +365,28 @@ h4.column-headline {
   color: #323231;
   font-size: 1.2rem;
 }
+
+#newsletter-headline h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  color: #321231;
+}
+
+h3 span {
+  color: #00d5e0;
+}
+/* #button-news {
+  margin-top: 1.2rem;
+} */
+
+div#button-news span {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+
 
 /* 
 @media only screen and (max-width: 320px) {
