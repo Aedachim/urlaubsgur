@@ -287,17 +287,18 @@ footer {
 }
 
 .footer-nav #footer-logo {
-  display: inline-flex;     
   width: 12rem;  
   height: auto;
 }
 
+.footer-social-icons {
+  display: inline-flex;
+  gap: 1.1rem;
+}
+
 .footer-icon-part {
-  display: inline-flex; 
-  gap: 2rem; 
   border: none;
   background-color: transparent;
-  /* margin-right: 2rem; */
   cursor: pointer;
 }
 
@@ -327,27 +328,36 @@ footer {
 .panel {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
-h4 .column-headline {
+
+h4.column-headline {
   color: #323231;
   font-size: 1.2rem;
   font-weight: 700;
   margin: 0 0 1.2rem 0;
 }
 
-.panel coporate-panel ul span {
-  color: #323231;
-  font-size: 1rem;
-  padding-bottom: 0.75rem;
-}
 
-.panel coporate-panel ul li a {
-  text-decoration: none;
-}
+
+/* .footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
 
 .footer-list li { 
   list-style: none;
+}
+
+.footer-list a {
+  text-decoration: none;
+}
+
+.footer-list span {
+  color: #323231;
+  font-size: 1.2rem;
 }
 
 /* 
