@@ -379,14 +379,36 @@ h3 span {
   margin-top: 1.2rem;
 } */
 
-div#button-news span {
+div#button-news {
   display: flex;
-  align-items: center;
-  text-decoration: none;
-
+  justify-content: center;
+  background-color: #00d5e0;
 }
 
+div#button-news a {
+  text-decoration: none;
+}
 
+div#button-news span {
+  font-size: 1rem;
+  font-family: Asap,sans-serif;
+  font-weight: 600;
+  color: #323231;
+  background-color: #00d5e0;
+  border: 2px solid transparent;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+div#button-news span:hover {
+  opacity: 1;
+  background-color: rgba(1,151,175);
+  color: rgba(255,255,255);
+}
+
+div#app-wrap {
+  /* display: inline-flex; */
+}
 
 /* 
 @media only screen and (max-width: 320px) {
