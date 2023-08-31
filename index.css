@@ -436,13 +436,13 @@ div#container-footnote a {
   line-height: 3rem;
 }
 
-div#container-footnote a:not(datenschutzerklärung):after {
+div#container-footnote a:not(.datenschutzerklärung):after {
   display: inline-flex;
   content: "|";
   padding: 0 0.75rem;
 }
 
-div#container-footnote a:not(kontakt):after {
+div#container-footnote a:not(.kontakt):after {
   display: inline-flex;
   /* content: "|"; */
 }
