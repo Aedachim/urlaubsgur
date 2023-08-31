@@ -439,25 +439,12 @@ div#container-footnote a {
 div#container-footnote a:not(datenschutzerklärung):after {
   display: inline-flex;
   content: "|";
-  padding-left: 0.75rem;
+  padding: 0 0.75rem;
 }
 
-div#container-footnote a:not(impressum):after,
-div#container-footnote a:not(impressum):before {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-div#container-footnote a:not(sitemap):after,
-div#container-footnote a:not(sitemap):before {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-div#container-footnote a:not(lexikon):after,
-div#container-footnote a:not(lexikon):before {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+div#container-footnote a:not(kontakt):after {
+  display: inline-flex;
+  /* content: "|"; */
 }
 
 div#footer-hash span {
