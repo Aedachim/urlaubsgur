@@ -436,7 +436,7 @@ div#container-footnote a {
   line-height: 3rem;
 }
 
-div#container-footnote a:not(.datenschutzerklärung):after {
+div#container-footnote a:not(.datenschutzerklaerung):after {
   display: inline-flex;
   content: "|";
   padding: 0 0.75rem;
