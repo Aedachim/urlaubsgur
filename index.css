@@ -430,14 +430,43 @@ h3 span {
   padding-bottom: 2.1rem;
 }
 
-a:not(:footnote-center right):before {
-  display: inline-flex;
-  content: "|";
+div#container-footnote a {
+  color: #323231;
+  text-decoration: none;
 }
 
-#container-footnote>a .footnote-center right {
-  padding-right: 0.375rem;
+div#container-footnote a:not(datenschutzerklärung):after {
+  display: inline-flex;
+  content: "|";
+  padding-left: 0.75rem;
 }
+
+div#container-footnote a:not(impressum):after,
+div#container-footnote a:not(impressum):before {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+div#container-footnote a:not(sitemap):after,
+div#container-footnote a:not(sitemap):before {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+div#container-footnote a:not(lexikon):after,
+div#container-footnote a:not(lexikon):before {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+div#container-footnote a:not(cookies):before {
+  padding-left: 0.75rem;
+}
+
+div#footer-hash span {
+  color: #0197af;
+}
+
 /* 
 @media only screen and (max-width: 320px) {
   nav li {
@@ -458,10 +487,6 @@ a:not(:footnote-center right):before {
 } */
 
 @media only screen and (max-width: 768px) {
-  .title-community h2 {
-    display: flex;
-    justify-content: center;
-  }
 
   .community-wrapper {
     grid-template-columns: 1fr;
@@ -482,10 +507,40 @@ a:not(:footnote-center right):before {
   }
 
   .title-community h2 {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .usp-wrapper {
     display: block;
+  }
+
+  .footer-nav {
+    display: block;
+  }
+  
+  .footer-social-icons {
+    margin: 2rem 0;
+  }
+
+  .footer-center-wrap {
+    display: block;
+  }
+
+  .footer-lists-browser {
+    display: block;
+  }
+
+  #footnote-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #copyright {
+    padding-bottom: 2rem;
+  }
+
+  #footer-hash {
+    margin-top: 2rem;
   }
 }
