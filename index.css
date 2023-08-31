@@ -433,6 +433,7 @@ h3 span {
 div#container-footnote a {
   color: #323231;
   text-decoration: none;
+  line-height: 3rem;
 }
 
 div#container-footnote a:not(datenschutzerklärung):after {
@@ -457,10 +458,6 @@ div#container-footnote a:not(lexikon):after,
 div#container-footnote a:not(lexikon):before {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-div#container-footnote a:not(cookies):before {
-  padding-left: 0.75rem;
 }
 
 div#footer-hash span {
@@ -521,6 +518,10 @@ div#footer-hash span {
   
   .footer-social-icons {
     margin: 2rem 0;
+  }
+
+  .footer-icon-part {
+    padding-right: 0.05rem;
   }
 
   .footer-center-wrap {
