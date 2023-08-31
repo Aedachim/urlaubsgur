@@ -163,7 +163,7 @@ img {
   vertical-align: middle;
 }
 
-.community-item > img {
+.community-item>img {
   aspect-ratio: 1/1;
   width: 100%;
   object-fit: cover;
@@ -297,11 +297,11 @@ footer {
   cursor: pointer;
 }
 
-#footer-underline {
-  background-color: #0197af;
+.footer-underline {
   width: 1215px;
   height: 1px;
   margin: 0 auto;
+  background-color: #aef9fc;
 }
 
 .footer-center-wrap {
@@ -332,11 +332,6 @@ h4.column-headline {
   margin: 0 0 1.2rem 0;
 }
 
-/* .footer-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-} */
 
 ul.footer-list {
   padding: 0;
@@ -373,9 +368,6 @@ h3 span {
   color: #00d5e0;
 }
 
-/* #button-news {
-  margin-top: 1.2rem;
-} */
 
 #footer-button {
   align-items: center;
@@ -398,26 +390,54 @@ h3 span {
   color: white;
 }
 
-/* div#button-news span {
-  font-size: 1rem;
-  color: #323231;
-  background-color: #00d5e0;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  padding: 0 1rem;
-  cursor: pointer;
+#app-wrap {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 2rem;
 }
 
-div#button-news span:hover {
-  opacity: 1;
-  background-color: rgba(1, 151, 175);
-  color: rgba(255, 255, 255);
-} */
-
-div#app-wrap {
-  /* display: inline-flex; */
+#app-store {
+  width: 45%;
 }
 
+#play-store {
+  width: 45%;
+}
+
+#footer-help {
+  display: block;
+  color: #70706f;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  max-width: none;
+}
+
+#footer-help>a {
+  color: #0197af;
+  text-decoration: inherit;
+}
+
+#copyright {
+  color: #70706f;
+}
+
+#footnote-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-bottom: 2.1rem;
+}
+
+a:not(:footnote-center right):before {
+  display: inline-flex;
+  content: "|";
+}
+
+#container-footnote>a .footnote-center right {
+  padding-right: 0.375rem;
+}
 /* 
 @media only screen and (max-width: 320px) {
   nav li {
