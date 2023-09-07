@@ -87,6 +87,7 @@ header #header-navigation button.icon-hidden {
 
 .bars {
   display: none;
+  background: none;
 }
 
 section {
@@ -511,10 +512,6 @@ div#footer-hash span {
     display: none;
   }
 
-  .icon-hidden {
-    display: none;
-  }
-
   .bars {
     display: block;
   }
@@ -523,6 +520,10 @@ div#footer-hash span {
     transition: all 0.8s linear;
     transform: rotate(90deg);
     cursor: pointer;
+  }
+
+  .phone {
+    display: none;
   }
 
   .title-community h2 {
@@ -565,5 +566,10 @@ div#footer-hash span {
 
   #footer-hash {
     margin-top: 2rem;
+  }
+
+  #container-footnote {
+    display: flex;
+    flex-direction: column;
   }
 }
