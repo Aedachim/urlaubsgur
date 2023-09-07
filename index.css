@@ -12,6 +12,7 @@ body {
   background-color: #fff;
 }
 
+
 header {
   display: flex;
   justify-content: center;
@@ -36,27 +37,56 @@ header #header-navigation {
   align-items: center;
 }
 
-header #header-navigation nav {
-  margin-right: 1rem;
-}
 
 header #header-navigation nav ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 0.25rem;
+}
+
+header #header-navigation nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #323231;
+  margin: 0 0.25rem 0 0;
+  padding: 0.75rem 1.5rem;
+}
+
+header #header-navigation nav ul li a:hover {
+  border-radius: 0.375rem;
+  background-color: #ebfeff;
+  transition: all 0.3s linear;
+  cursor: pointer;
 }
 
 header #header-navigation button {
   appearance: none;
   border: none;
   background-color: transparent;
+  padding: 8px;
+  margin: 0 4px;
+}
+
+header #header-navigation button:hover {
+  border-radius: 50px;
+  background-color: #ebfeff;
+  transition: all 0.3s linear;
+  cursor: pointer;
 }
 
 header #header-navigation button svg {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+
+header #header-navigation button.icon-hidden {
+  margin: 0 0.4rem;
+}
+
+.bars {
+  display: none;
 }
 
 section {
@@ -436,15 +466,10 @@ div#container-footnote a {
   line-height: 3rem;
 }
 
-div#container-footnote a:not(.datenschutzerklaerung):after {
+div#container-footnote a:not(.datenschutzerklaerung):before {
   display: inline-flex;
   content: "|";
   padding: 0 0.75rem;
-}
-
-div#container-footnote a:not(.kontakt):after {
-  display: inline-flex;
-  /* content: "|"; */
 }
 
 div#footer-hash span {
@@ -488,6 +513,16 @@ div#footer-hash span {
 
   .icon-hidden {
     display: none;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  .bars:hover {
+    transition: all 0.8s linear;
+    transform: rotate(90deg);
+    cursor: pointer;
   }
 
   .title-community h2 {
