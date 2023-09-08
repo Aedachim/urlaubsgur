@@ -13,6 +13,9 @@ body {
 }
 
 #sidebar {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
   /* position: absolute;
   top: 0;
   left: 0; */
@@ -21,31 +24,68 @@ body {
 
 div.side-top-wrapper #side-logo {
   height: 54px;
+  width: 100%;
 }
 
-.side-close-btn {
-  height: 24px;
+#sidebar .side-logo-close-btn-wrap svg {
+  height: 32px;
+  width: 100%;
 }
+
+#sidebar .side-logo-close-btn-wrap button {
+  border: none;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow:  0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+  padding: 0.5rem;
+  margin: 0 4px;
+}
+
+#sidebar .side-logo-close-btn-wrap button:hover {
+  background-color: #ebfeff;
+  transition: all 0.3s linear;
+  border-radius: 50%;;
+  cursor: pointer;
+}
+
 
 .side-top-wrapper {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 8rem 1.25rem 1rem;
 }
 
-.side-logo-close-btn-wrap {
+#sidebar .side-logo-close-btn-wrap {
   display: flex;
-  justify-content: space-between;
+  gap: 10rem;
 }
 
-/* div.side-top-wrapper div.side-logo-wrap {
- display: flex;
- justify-content: flex-start;
+.side-wrapper nav.side-links ul.side-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.side-wrapper nav.side-links ul.side-links-list a {
+  text-decoration: none;
+  line-height: 1rem;
+  font-weight: 500;
+  color: #323231;
+  padding: 1.25rem 8rem 1.25rem 1rem;
+
 }
 
-div.side-top-wrapper div.side-close-btn-wrap {
-  display: flex;
-  justify-content: flex-end;
-} */
+
+.side-wrapper nav.side-links ul.side-links-list a:not(.side-last-minute):after {
+  background-color: rgba(240, 240, 240, 1);
+  /* color: #323231; */
+  content: "";
+  bottom: 0;
+  height: 1px;
+  left: 0.5rem;
+  position: relative;
+  right: 0.5rem;
+}
 
 header {
   display: flex;
@@ -121,7 +161,7 @@ header #header-navigation button.icon-hidden {
   margin: 0 0.4rem;
 }
 
-.bars {
+header #header-navigation button svg.bars {
   display: none;
   background: none;
 }
@@ -516,6 +556,7 @@ div#footer-hash span {
 .show-links {
   height: 10rem;
 }
+
 /* 
 @media only screen and (max-width: 320px) {
   nav li {
@@ -551,8 +592,6 @@ div#footer-hash span {
     display: none;
   }
 
-
-  
   .bars {
     display: block;
   }
@@ -579,7 +618,7 @@ div#footer-hash span {
   .footer-nav {
     display: block;
   }
-  
+
   .footer-social-icons {
     margin: 2rem 0;
   }
