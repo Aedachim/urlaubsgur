@@ -12,6 +12,40 @@ body {
   background-color: #fff;
 }
 
+#sidebar {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+
+}
+
+div.side-top-wrapper #side-logo {
+  height: 54px;
+}
+
+.side-close-btn {
+  height: 24px;
+}
+
+.side-top-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.side-logo-close-btn-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* div.side-top-wrapper div.side-logo-wrap {
+ display: flex;
+ justify-content: flex-start;
+}
+
+div.side-top-wrapper div.side-close-btn-wrap {
+  display: flex;
+  justify-content: flex-end;
+} */
 
 header {
   display: flex;
@@ -27,6 +61,8 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
+
+
 
 header #logo {
   height: 54px;
@@ -477,6 +513,9 @@ div#footer-hash span {
   color: #0197af;
 }
 
+.show-links {
+  height: 10rem;
+}
 /* 
 @media only screen and (max-width: 320px) {
   nav li {
@@ -512,6 +551,8 @@ div#footer-hash span {
     display: none;
   }
 
+
+  
   .bars {
     display: block;
   }

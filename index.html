@@ -4,17 +4,41 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="index.css" />
+  <script src="app.js" defer></script>
 </head>
 
 <body>
+  <!-- sidebar -->
+  <div id="sidebar">
+    <aside class="side-wrapper">
+      <div class="side-top-wrapper">
+        <div class="side-logo-close-btn-wrap">
+          <a href="#">
+            <img id="side-logo" src="assets\images\logo.svg" alt="side-logo">
+          </a>
+          <!-- </div> -->
+          <!-- <div class="side-close-btn-wrap"> -->
+          <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+            class="svg-inline--fa fa-times fa-w-10 side-close-btn">
+            <path fill="currentColor"
+              d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+              class=""></path>
+          </svg>
+        </div>
+      </div>
+  </div>
+  </aside>
+  </div>
+  <!-- header -->
   <header>
     <div class="container">
       <a href="#">
-      <img id="logo" src="assets/images/logo.svg" alt="Logo" />
+        <img id="logo" src="assets/images/logo.svg" alt="Logo" />
       </a>
       <div id="header-navigation">
         <nav>
-          <ul>
+          <ul class="links">
             <li><a href="#">Angebote</a></li>
             <li><a href="#">Urlaubsziele</a></li>
             <li><a href="#">Reisemagazin</a></li>
@@ -445,12 +469,14 @@
         </div>
         <!-- end of item -->
       </div>
-      <p id="footer-help">Du hast Fragen oder benötigst Hilfe bei einer Buchung? Rufe uns an unter <a href="tel:+49 2301 8939742">+49 2301 8939742 </a> - Wir sind täglich von 8 bis 22 Uhr für dich da.</p>
+      <p id="footer-help">Du hast Fragen oder benötigst Hilfe bei einer Buchung? Rufe uns an unter <a
+          href="tel:+49 2301 8939742">+49 2301 8939742 </a> - Wir sind täglich von 8 bis 22 Uhr für dich da.</p>
       <div class="footer-underline"></div>
       <div id="footnote-wrap">
         <div id="copyright">Copyright 2023 - Urlaubsguru </div>
         <div id="container-footnote">
-          <a href="https://www.urlaubsguru.de/datenschutzerklaerung/"  class="datenschutzerklaerung">Datenschutzerklärung</a>
+          <a href="https://www.urlaubsguru.de/datenschutzerklaerung/"
+            class="datenschutzerklaerung">Datenschutzerklärung</a>
           <a href="https://www.urlaubsguru.de/impressum/">Impressum</a>
           <a href="https://www.urlaubsguru.de/sitemap/">Sitemap</a>
           <a href="https://www.urlaubsguru.de/lexikon/">Lexikon</a>
