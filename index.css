@@ -69,10 +69,6 @@ div.side-top-wrapper #side-logo {
   padding: 1.25rem 8rem 1.25rem 1rem;
 } */
 
-/* #sidebar .side-logo-close-btn-wrap {
-  display: flex;
-  gap: 10rem;
-} */
 
 .side-wrapper nav.side-links ul.side-links-list {
   list-style: none;
@@ -90,7 +86,7 @@ div.side-top-wrapper #side-logo {
 
 
 .side-wrapper nav.side-links ul.side-links-list a:not(.side-last-minute):after {
-  background-color: rgba(240, 240, 240, 1);
+  /* background-color: rgba(240, 240, 240, 1); */
   /* color: #323231; */
   content: "";
   bottom: 0;
