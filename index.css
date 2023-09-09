@@ -14,19 +14,17 @@ body {
 
 #sidebar {
   background-color: #fff;
-  width: 100%;
-  padding: 0.5rem 1rem;
+  max-width: 100%;
+  /* padding: 0.5rem 1rem; */
+  /* padding-left: 1rem; */
+  padding-top: 2rem;
   margin: 0 auto;
   min-height: 100vh;
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  left: 0; */
-
-}
-
-#sidebar .side-wrapper {
-  display: flex;
-  flex-direction: column;
+  left: 0;
+  width: 20rem;
+  z-index: 999;
 }
 
 div.side-top-wrapper #side-logo {
@@ -47,9 +45,6 @@ div.side-top-wrapper #side-logo {
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: none;
   background-color: #fff;
   box-shadow:  0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
@@ -62,38 +57,35 @@ div.side-top-wrapper #side-logo {
   cursor: pointer;
 }
 
-
-/* .side-top-wrapper {
-  display: flex;
-  align-items: center;
-  padding: 1.25rem 8rem 1.25rem 1rem;
-} */
-
-
 .side-wrapper nav.side-links ul.side-links-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
+.side-wrapper nav.side-links ul.side-links-list li {
+  padding-left: 1rem;
+  padding-top: 2rem;
+  margin: 0 auto;
+}
+
 .side-wrapper nav.side-links ul.side-links-list a {
   text-decoration: none;
   line-height: 1rem;
   font-weight: 500;
   color: #323231;
-  /* padding: 1.25rem 8rem 1.25rem 1rem; */
-
+  cursor: pointer;
 }
 
 
 .side-wrapper nav.side-links ul.side-links-list a:not(.side-last-minute):after {
   /* background-color: rgba(240, 240, 240, 1); */
-  /* color: #323231; */
-  content: "";
-  bottom: 0;
+  color: #323231;
+  content: "_____________________________________";
+  bottom: -20px;
   height: 1px;
-  left: 0.5rem;
+  left: -5rem;
   position: relative;
-  right: 0.5rem;
 }
 
 header {
